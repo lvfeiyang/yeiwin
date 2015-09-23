@@ -3,7 +3,12 @@ require 'digest/sha1'
 class WelcomeController < ApplicationController
   def index
     if checksign
+      if params[:xml][:MsgType] == "text"
+        render "index", layout: false, :formats => :xml
+      else
         render text: params[:echostr]
+      end
+    end
   end
 
   private

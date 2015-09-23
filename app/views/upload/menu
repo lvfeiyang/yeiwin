@@ -1,0 +1,6 @@
+<h1>get access_token</h1>
+
+<a href="gettoken">get</a>
+<a href="addmenu">addmenu</a>
+
+<p><%= @access_token.token %>, <%= @access_token.expires %></p>
