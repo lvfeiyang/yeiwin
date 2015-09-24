@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'welcome/index'
+  post 'welcome/index'
   get 'upload/menu'
   get 'upload/gettoken'
   get 'upload/addmenu'

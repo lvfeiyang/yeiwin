@@ -1,0 +1,7 @@
+<xml>
+<ToUserName><![CDATA[<%= @body['xml']['FromUserName'] %>]]></ToUserName>
+<FromUserName><![CDATA[<%= @body['xml']['ToUserName'] %>]]></FromUserName>
+<CreateTime><%= Time.now.to_i %></CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[hello L你]]></Content>
+</xml>
