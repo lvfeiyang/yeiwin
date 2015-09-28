@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  UserId_id: 
+  good: MyString
+  goodnum: 1
+  price: 9.99
+  time: 2015-09-28 20:14:31
+  AddressId_id: 
+
+two:
+  UserId_id: 
+  good: MyString
+  goodnum: 1
+  price: 9.99
+  time: 2015-09-28 20:14:31
+  AddressId_id: 

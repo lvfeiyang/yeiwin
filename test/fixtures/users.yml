@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  OpenId: 1
+  mobile: MyString
+
+two:
+  OpenId: 1
+  mobile: MyString

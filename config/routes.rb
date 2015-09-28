@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :orders
+  resources :addresses
+  resources :users
   get 'welcome/index'
   post 'welcome/index'
   get 'upload/menu'

@@ -11,11 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150921112722) do
+ActiveRecord::Schema.define(version: 20150928121431) do
 
   create_table "access_tokens", force: :cascade do |t|
     t.string   "token"
     t.integer  "expires"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "addresses", force: :cascade do |t|
+    t.string   "info"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.integer  "UserId_id"
+    t.string   "good"
+    t.integer  "goodnum"
+    t.decimal  "price"
+    t.time     "time"
+    t.integer  "AddressId_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  add_index "orders", ["AddressId_id"], name: "index_orders_on_AddressId_id"
+  add_index "orders", ["UserId_id"], name: "index_orders_on_UserId_id"
+
+  create_table "users", force: :cascade do |t|
+    t.integer  "OpenId"
+    t.string   "mobile"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
