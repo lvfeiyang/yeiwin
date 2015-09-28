@@ -19,10 +19,10 @@ class UploadController < ApplicationController
     end
 
     def addmenu
-    @access_token = AccessToken.find(1)
-    add_param = {button: {type: "view", name: "搜索", url: "www.baidu.com"}}
-    data = post("https://api.weixin.qq.com/cgi-bin/menu/create?access_token=#{@access_token.token}", add_param)
-    logger.info "ltest-#{data}"
+        @access_token = AccessToken.find(1)
+        add_param = {button: {type: "view", name: "搜索", url: "www.baidu.com"}}
+        data = post("https://api.weixin.qq.com/cgi-bin/menu/create?access_token=#{@access_token.token}", add_param)
+        logger.info "ltest-#{data}"
     end
 
 

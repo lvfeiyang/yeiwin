@@ -1,0 +1,14 @@
+<xml>
+<ToUserName><![CDATA[<%= @body['xml']['FromUserName'] %>]]></ToUserName>
+<FromUserName><![CDATA[<%= @body['xml']['ToUserName'] %>]]></FromUserName>
+<CreateTime><%= Time.now.to_i %></CreateTime>
+<MsgType><![CDATA[news]]></MsgType>
+<ArticleCount>1</ArticleCount>
+<Articles>
+<item>
+<Title><![CDATA[L_title1]]></Title> 
+<Description><![CDATA[L_description1]]></Description>
+<Url><![CDATA[http://www.baidu.com]]></Url>
+</item>
+</Articles>
+</xml>
